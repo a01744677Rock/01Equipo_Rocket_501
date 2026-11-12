@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Equipo Rocket | Aerospace Technology</title>
+  <meta name="description" content="Equipo Rocket S.A. de C.V. — Aerospace Technology. Despegamos para hacer historia." />
+  <meta name="theme-color" content="#01060f" />
+  <meta property="og:title" content="Equipo Rocket | Aerospace Technology" />
+  <meta property="og:description" content="Despegamos para hacer historia." />
+  <meta property="og:image" content="assets/img/logo-principal.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== FONDO: cohete despegando (estático) + capas HUD ===== -->
+  <div class="bg" aria-hidden="true"></div>
+  <div class="veil" aria-hidden="true"></div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="scan" aria-hidden="true"></div>
+  <div class="laser" aria-hidden="true"></div>
+  <div class="frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <header class="site-header">
+    <a href="#inicio" class="brand" aria-label="Equipo Rocket, ir al inicio">
+      <img class="hlogo" src="assets/img/logo-horizontal.png" alt="Logotipo horizontal Equipo Rocket, Aerospace Technology" width="237" height="42" />
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">MISIÓN</a>
+      <a href="#objetivos">OBJETIVOS</a>
+      <a href="#fases">FASES</a>
+      <a href="#equipo">TRIPULACIÓN</a>
+      <a href="#identidad">IDENTIDAD</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="chip"><i></i>UNA NUEVA ÓRBITA COMIENZA</div>
+
+      <div class="scope" aria-hidden="true">
+        <div class="halo"></div>
+        <div class="disc"></div>
+        <div class="sweep"></div>
+        <div class="r1"></div>
+        <div class="r2"></div>
+        <div class="r3"></div>
+        <div class="orbit orbit-a"><span></span></div>
+        <div class="orbit orbit-b"><span></span></div>
+        <div class="cross"></div>
+        <img src="assets/img/logo-principal.png" alt="" width="247" height="216" />
+        <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span>
+      </div>
+
+      <p class="eyebrow">EQUIPO ROCKET <span>·</span> AEROSPACE TECHNOLOGY <span>·</span> S.A. DE C.V.</p>
+      <h1><span>Despegamos</span><em>para hacer historia</em></h1>
+      <p class="hook">¿Y si el próximo gran lanzamiento comienza aquí?</p>
+      <p class="lead">Ingeniería, pasión y trabajo en equipo: un proyecto aeroespacial que ya está encendiendo motores.</p>
+
+      <div class="prog" role="group" aria-label="Progreso de la misión">
+        <p class="pk">FASE ACTUAL · <b>03 PRUEBAS EN TIERRA</b><em>EN PROCESO</em></p>
+        <ol class="steps">
+          <li class="done"><i></i>DISEÑO</li>
+          <li class="done"><i></i>CONSTRUCCIÓN</li>
+          <li class="now" aria-current="step"><i></i>PRUEBAS</li>
+          <li><i></i>LANZAMIENTO</li>
+        </ol>
+        <div class="cd" aria-live="polite">
+          <p><b id="cd-d">00</b><span>DÍAS</span></p>
+          <p><b id="cd-h">00</b><span>HORAS</span></p>
+          <p><b id="cd-m">00</b><span>MIN</span></p>
+          <p><b id="cd-s">00</b><span>SEG</span></p>
+        </div>
+        <p class="pn">DESPEGUE PRÓXIMAMENTE</p>
+      </div>
+
+      <div class="acts">
+        <button class="btn" id="go" type="button">SECUENCIA DE LANZAMIENTO <b aria-hidden="true">↗</b></button>
+        <a class="btn alt" href="#objetivos">VER OBJETIVOS <b aria-hidden="true">→</b></a>
+      </div>
+
+      <div class="footnote"><span class="rule"></span><span>EL FUTURO NO SE ESPERA. SE LANZA.</span><span class="rule"></span></div>
+      <div class="grid" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== OBJETIVOS ===== -->
+    <section class="sec" id="objetivos">
+      <p class="idx">01 <span>/</span> MISIÓN</p>
+      <h2>Objetivos del proyecto</h2>
+      <div class="cards">
+        <article class="card"><div><span class="num">01</span><h3>Construir un cohete propio</h3><p>Diseñar, armar y lanzar un cohete hecho completamente por nuestro equipo.</p></div></article>
+        <article class="card"><div><span class="num">02</span><h3>Aprender ingeniería aeroespacial</h3><p>Dominar la propulsión, las estructuras y la electrónica a través de la práctica.</p></div></article>
+        <article class="card"><div><span class="num">03</span><h3>Trabajar en equipo</h3><p>Unir talento y disciplina bajo una identidad y una meta en común.</p></div></article>
+        <article class="card"><div><span class="num">04</span><h3>Hacer historia</h3><p>Llevar el nombre de Equipo Rocket a lo más alto de la ingeniería aeroespacial.</p></div></article>
+      </div>
+    </section>
+
+    <!-- ===== FASES ===== -->
+    <section class="sec" id="fases">
+      <p class="idx">02 <span>/</span> PLAN DE VUELO</p>
+      <h2>Fases de la misión</h2>
+      <ol class="fases">
+        <li class="done"><span class="tg">COMPLETADA</span><span class="fn">01</span><h3>Diseño</h3><p>Definir la misión, calcular el cohete y planear cada sistema.</p></li>
+        <li class="done"><span class="tg">COMPLETADA</span><span class="fn">02</span><h3>Construcción</h3><p>Fabricar y ensamblar estructura, propulsión y electrónica.</p></li>
+        <li class="now"><span class="tg">EN PROCESO</span><span class="fn">03</span><h3>Pruebas en tierra</h3><p>Verificar cada sistema antes de cualquier intento de lanzamiento.</p></li>
+        <li><span class="tg">PRÓXIMAMENTE</span><span class="fn">04</span><h3>Lanzamiento</h3><p>Despegar, recuperar el cohete y analizar los datos del vuelo.</p></li>
+      </ol>
+    </section>
+
+    <!-- ===== TRIPULACIÓN ===== -->
+    <section class="sec" id="equipo">
+      <p class="idx">03 <span>/</span> EQUIPO</p>
+      <h2>Tripulación de la misión</h2>
+      <div class="team">
+        <article class="card crew"><div><span class="ct"><b>TRIPULANTE</b><b>ER-01</b></span><span class="av">EJ</span><h3>Everardo Manuel Jacobo Serrano</h3><span class="role">COMANDANTE DE MISIÓN</span><span class="bar"></span><span class="st">LISTO PARA DESPEGUE</span></div></article>
+        <article class="card crew"><div><span class="ct"><b>TRIPULANTE</b><b>ER-02</b></span><span class="av">RP</span><h3>Rodrigo Pérez Ruiz</h3><span class="role">INGENIERO DE PROPULSIÓN</span><span class="bar"></span><span class="st">LISTO PARA DESPEGUE</span></div></article>
+        <article class="card crew"><div><span class="ct"><b>TRIPULANTE</b><b>ER-03</b></span><span class="av">RG</span><h3>Rodrigo Gaytán Contreras</h3><span class="role">INGENIERO DE ESTRUCTURAS</span><span class="bar"></span><span class="st">LISTO PARA DESPEGUE</span></div></article>
+        <article class="card crew"><div><span class="ct"><b>TRIPULANTE</b><b>ER-04</b></span><span class="av">MA</span><h3>Marco Antonio</h3><span class="role">ESPECIALISTA EN AVIÓNICA</span><span class="bar"></span><span class="st">LISTO PARA DESPEGUE</span></div></article>
+        <article class="card crew"><div><span class="ct"><b>TRIPULANTE</b><b>ER-05</b></span><span class="av">CD</span><h3>Carlos David</h3><span class="role">CONTROL DE MISIÓN Y TELEMETRÍA</span><span class="bar"></span><span class="st">LISTO PARA DESPEGUE</span></div></article>
+      </div>
+    </section>
+
+    <!-- ===== IDENTIDAD VISUAL ===== -->
+    <section class="sec" id="identidad">
+      <p class="idx">04 <span>/</span> MARCA</p>
+      <h2>Identidad visual</h2>
+      <div class="id-feature">
+        <figure class="id-logo">
+          <img src="assets/img/logo-principal.png" alt="Logo principal Equipo Rocket" width="247" height="216" />
+          <figcaption>LOGO PRINCIPAL · VERSIÓN A COLOR</figcaption>
+        </figure>
+        <figure class="id-word">
+          <img src="assets/img/logo-horizontal.png" alt="Logo horizontal Equipo Rocket" width="237" height="42" />
+          <figcaption>VERSIÓN HORIZONTAL</figcaption>
+        </figure>
+      </div>
+      <div class="swatches">
+        <div class="sw-card"><span class="sw" style="--sw:#003D6D"></span><div><h3>Deep Blue</h3><code>#003D6D</code></div></div>
+        <div class="sw-card"><span class="sw" style="--sw:linear-gradient(135deg,#0a8fc4,#2fd4ff)"></span><div><h3>Cyan-Blue Glow</h3><code>#2FD4FF</code></div></div>
+        <div class="sw-card"><span class="sw" style="--sw:linear-gradient(135deg,#8c949e,#eef1f4,#8c949e)"></span><div><h3>Metal Silver</h3><code>#C9D1DA</code></div></div>
+        <div class="sw-card"><span class="sw" style="--sw:linear-gradient(135deg,#9a1219,#e3262e)"></span><div><h3>Rocket Red</h3><code>#E3262E</code></div></div>
+      </div>
+      <div class="board">
+        <a href="assets/img/kit-identidad.jpg" target="_blank" rel="noopener"><img src="assets/img/kit-identidad.jpg" alt="Kit de logos e identidad visual de Equipo Rocket" width="847" height="788" loading="lazy" /></a>
+        <p class="board-cap">KIT DE LOGOS E IDENTIDAD VISUAL · CLIC PARA AMPLIAR ↗</p>
+      </div>
+
+      <div class="cta">
+        <div><p class="idx">T–0 <span>/</span> LISTOS</p><h2 class="cta-h">¿Listo para el <em>despegue?</em></h2></div>
+        <a class="btn" href="#inicio">VOLVER A LA PLATAFORMA <b aria-hidden="true">↑</b></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE ===== -->
+  <footer class="site-footer">
+    <img src="assets/img/logo-principal.png" alt="Emblema Equipo Rocket" width="90" height="79" />
+    <p>EQUIPO ROCKET &nbsp;|&nbsp; AEROSPACE TECHNOLOGY</p>
+    <p class="log">T–<span id="yy">26</span> <span class="sl">/</span> MISSION LOG</p>
+  </footer>
+
+  <!-- ===== SECUENCIA DE LANZAMIENTO (overlay) ===== -->
+  <div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="ovt" hidden>
+    <button class="ovx" id="ovx" type="button" aria-label="Cerrar">×</button>
+    <p class="ovt" id="ovt">SECUENCIA DE LANZAMIENTO</p>
+    <p class="ovn" id="ovn">10</p>
+    <p class="ovs">EQUIPO ROCKET · AEROSPACE TECHNOLOGY</p>
+    <svg class="rkt" viewBox="-30 -80 100 200" aria-hidden="true">
+      <g class="pc"><path d="M-22 -40A42 36 0 0 1 62 -40Q41 -46 20 -40Q-1 -46 -22 -40Z" fill="#C9D1DA"/><path d="M20 -76Q4 -60 6 -40Q13 -43 20 -40Q27 -43 34 -40Q36 -60 20 -76Z" fill="#E3262E"/><path d="M-22 -40L20 0M6 -40L20 0M34 -40L20 0M62 -40L20 0" stroke="#2FD4FF" stroke-width="1" fill="none"/></g>
+      <path class="fl" d="M11 72h18L20 116z" fill="#ffb347"/>
+      <path class="fl" d="M15 72h10L20 100z" fill="#e9fbff"/>
+      <path d="M20 0C30 18 32 40 32 70H8C8 40 10 18 20 0Z" fill="#EEF1F4"/>
+      <path d="M20 0C26 10 29 20 30.5 30H9.5C11 20 14 10 20 0Z" fill="#E3262E"/>
+      <circle cx="20" cy="42" r="6" fill="#003D6D" stroke="#2FD4FF" stroke-width="2"/>
+      <path d="M8 54L0 84l8-6zM32 54l8 30-8-6z" fill="#E3262E"/>
+      <rect x="8" y="62" width="24" height="6" fill="#003D6D"/>
+    </svg>
+  </div>
+
+  <!-- ===== MÚSICA AMBIENTAL ===== -->
+  <button class="snd" id="snd" type="button" aria-pressed="false" aria-label="Activar música ambiental" title="Música">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h4l5-4v14l-5-4H3z"/><path class="w" d="M15.5 8.5a5 5 0 0 1 0 7M18.2 5.8a8.8 8.8 0 0 1 0 12.4"/><path class="x" d="M16 9.5l5 5M21 9.5l-5 5"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
