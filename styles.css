@@ -27,7 +27,7 @@ img { max-width: 100%; }
 /* Cohete despegando — imagen ESTÁTICA y fija */
 .bg {
   position: fixed; inset: 0; z-index: -4;
-  background: var(--n) url("../assets/img/despegue.svg") center bottom / cover no-repeat;
+  background: var(--n) url("despegue.svg") center bottom / cover no-repeat;
 }
 .veil {
   position: fixed; inset: 0; z-index: -3; pointer-events: none;
